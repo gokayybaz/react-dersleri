@@ -1,0 +1,22 @@
+React Nasıl Çalışır?
+----------------------
+1-> React public sayfası altında bir index.html oluşturup bir div açıp id'sini root olarak belirtir.
+
+2-> Sonra index.js'de ReactDOM kullanarak bir root oluşturup ilgili div'i root olarak belirtir.
+
+3-> Böylece oluşturulan her component ReactDOM'dan geçip direk root id'li div'e gönderilecektir.
+
+ReactDOM bir VirtualDOM'dur, React'ın en güzel yanıda VirtualDOM'a sahip olmasıdır.
+
+Pekala nedir bu VirtualDOM?
+-----------------------------
+-> Gerçek DOM (RealDOM)'un bellekteki kopyasıdır.
+
+-> Document Objeleri KEY-VALUE olarak bulunur.
+
+-> Güncelleme anında bellekte 2 adet VirtualDOM bulundurulur. (Birisi güncellenmemiş, diğeri ise güncellenmiş halidir.
+   bir Diff algoritmasıyla güncellenen komponent/komponentler bu iki VirtualDOM arasında karşılaştırılarak bulunup, RealDOM'a gönderilir.)
+
+-> Sayfada sadece değişikliğin olduğu yer güncellenir. (State Güncellendiğinde)
+
+-> Performansı önemli ölçüde arttırır.

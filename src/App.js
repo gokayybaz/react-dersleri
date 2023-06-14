@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+// Burası VirtualDOM'da root'a render edilen ilk component'dir.
+import HelloWorld from "./components/HelloWorld";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <h1>Hello ReactJS</h1> */}
+      <HelloWorld />
+      <HelloWorld />
+      <HelloWorld />
+      <HelloWorld />
+      <HelloWorld />
     </div>
   );
 }
