@@ -1,0 +1,10 @@
+.main--product--card {
+  padding: 1rem;
+  /* background-color: indigo; */
+  /* color: white; */
+  margin-bottom: 1rem;
+}
+
+.product--card--badge {
+  margin-right: 1rem;
+}
